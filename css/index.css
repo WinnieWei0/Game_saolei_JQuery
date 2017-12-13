@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.box {
+    width: 800px;
+    height: 600px;
+    background-color: rgb(236, 221, 240);
+    /* background-color: #c3c2c4; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.top {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(211, 202, 214);
+}
+
+.container {
+    width: 100%;
+    height: 485px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.container .tab ul {
+    clear: both;
+}
+
+.container .tab li {
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    border-top: 2px solid whitesmoke;
+    border-left: 2px solid whitesmoke;
+    background-color: rgb(17, 21, 83);
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+
+.bottom {
+    width: 770px;
+    height: 50px;
+    background-color: rgb(211, 202, 214);
+    font: normal bold 18px/50px 'misrosoft yehei';
+    padding: 0 15px;
+}
+
+.bottom p {
+    width: 150px;
+    height: 48px;
+    border: 1px solid #000;
+    float: left;
+    padding-left: 20px;
+}
+
+.bottom .bottomRight {
+    float: right;
+}
+
+.bottom .bottomRight .count {
+    color: red;
+}
+
+
+/* 右键标记样式 */
+
+.box .container .tab ul li.active {
+    background-color: rgb(255, 0, 221) !important;
+}
+
+
+/* 点击后的样式 */
+
+.box .container .tab ul li.isCheck {
+    background-color: #c3c2c4;
+}
+
+
+/* 雷的样式 */
+
+.box .container .tab ul li.isBong {
+    /* background-color: red !important; */
+}
+
+
+/* 游戏结果样式 */
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.mask .result-box {
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    border: 1px solid rgb(33, 33, 33);
+    background-color: rgb(250, 250, 250);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mask .result-box h1 {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.mask .result-box p {
+    text-align: center;
+}
+
+.mask .result-box button {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
